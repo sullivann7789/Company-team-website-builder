@@ -62,7 +62,7 @@ function createemps() {
                 </html>
                         `
             );
-            fs.writeFile('index.html', htmlfile, (err) =>
+            fs.writeFile('./dist/index.html', htmlfile, (err) =>
             err ? console.log(err) : console.log('Success!'));
         }
         };
