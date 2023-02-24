@@ -113,7 +113,7 @@ function engprompt(){
             <br />
           ${EEID}
           <br />
-          ${EnEmail}
+         Email: <a href="mailto:${EnEmail}>${EnEmail}</a>
           <br />
           ${Ghub}
           </p>
@@ -172,7 +172,7 @@ function intprompt(){
             <br />
           ${IEID}
           <br />
-          ${IEmail}
+          Email: <a href="mailto:${IEmail}>${IEmail}</a>
           <br />
           ${School}
           </p>
@@ -231,7 +231,7 @@ inquirer.prompt([
         <br />
       ${MEID}
       <br />
-      ${MEmAd}
+      Email: <a href="mailto:${MEmAd}>${MEmAd}</a>
       <br />
       ${MOfNu}
       </p>
