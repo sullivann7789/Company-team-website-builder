@@ -113,9 +113,9 @@ function engprompt(){
             <br />
           ${EEID}
           <br />
-         Email: <a href="mailto:${EnEmail}>${EnEmail}</a>
+         Email: <a href="mailto:${EnEmail}">${EnEmail}</a>
           <br />
-          ${Ghub}
+          Github: <a href="https://www.github.com/${Ghub}">${Ghub}</a>
           </p>
         </div>
         <footer class="card-footer text-center">
@@ -172,7 +172,7 @@ function intprompt(){
             <br />
           ${IEID}
           <br />
-          Email: <a href="mailto:${IEmail}>${IEmail}</a>
+          Email: <a href="mailto:${IEmail}">${IEmail}</a>
           <br />
           ${School}
           </p>
@@ -231,7 +231,7 @@ inquirer.prompt([
         <br />
       ${MEID}
       <br />
-      Email: <a href="mailto:${MEmAd}>${MEmAd}</a>
+      Email: <a href="mailto:${MEmAd}">${MEmAd}</a>
       <br />
       ${MOfNu}
       </p>
