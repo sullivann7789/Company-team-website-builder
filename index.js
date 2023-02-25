@@ -49,22 +49,24 @@ function createemps() {
             const manager = new Manager(Mname, MEID, MEmAd, MOfNu, AddEmp);
             console.log(manager);
             var appendmgr = (`          
-            <section class="card card-rounded col-7 bg-white">
-            <header class="card-header text-center">
+            <section class="card card-rounded bg-white">
+            <header class="card-header text-center bg-primary">
               <h2 class="text-white">
                 Manager
               </h2>
             </header>
             <div class="p-3">
+            <blockquote class="blockquote text-center">
               <p class="card-body">
               ${Mname}
                 <br />
-              ${MEID}
+              Employee ID: <br>${MEID}
               <br />
               Email: <a href="mailto:${MEmAd}">${MEmAd}</a>
               <br />
-              ${MOfNu}
+              Phone: ${MOfNu}
               </p>
+              </blockquote>
             </div>
             <footer class="card-footer text-center">
             </footer>
@@ -108,22 +110,24 @@ function createemps() {
                 const intern = new Intern(Iname, IEID, IEmail, School, AddEmp);
                 console.log(intern);
                 var appendint = (`          
-                <section class="card card-rounded col-7 bg-white">
-                <header class="card-header text-center">
+                <section class="card card-rounded bg-white">
+                <header class="card-header text-center bg-primary">
                   <h2 class="text-white">
                     Intern
                   </h2>
                 </header>
                 <div class="p-3">
+                <blockquote class="blockquote text-center">
                   <p class="card-body">
                   ${Iname}
                     <br />
-                  ${IEID}
+                  Employee ID: <br>${IEID}
                   <br />
                   Email: <a href="mailto:${IEmail}">${IEmail}</a>
                   <br />
-                  ${School}
+                  School: ${School}
                   </p>
+                  </blockquote>
                 </div>
                 <footer class="card-footer text-center">
                 </footer>
@@ -168,13 +172,14 @@ function createemps() {
                 const engineer = new Engineer(Ename, EEID, EnEmail, Ghub, AddEmp);
                 console.log(engineer);
                 var appendeng = (`          
-                <section class="card card-rounded col-7 bg-white">
-                <header class="card-header text-center">
+                <section class="card card-rounded bg-white">
+                <header class="card-header text-center bg-primary">
                   <h2 class="text-white">
                     Engineer
                   </h2>
                 </header>
                 <div class="p-3">
+                <blockquote class="blockquote text-center">
                   <p class="card-body">
                   ${Ename}
                     <br />
@@ -182,8 +187,9 @@ function createemps() {
                   <br />
                  Email: <a href="mailto:${EnEmail}">${EnEmail}</a>
                   <br />
-                  Github: <a href="https://www.github.com/${Ghub}">${Ghub}</a>
+                  Github: <a href="https://www.github.com/${Ghub}">https://www.github.com/${Ghub}</a>
                   </p>
+                  </blockquote>
                 </div>
                 <footer class="card-footer text-center">
                 </footer>
@@ -209,6 +215,7 @@ function createemps() {
                         <meta charset="UTF-8"/>
                         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                         <title>Company Web</title>
+                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
                         <link rel="stylesheet" type="css" href="./dist/style.css" />
                         <script
                         src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -220,7 +227,7 @@ function createemps() {
                     <header class="p-5 text-center text-white bg-primary">
                     <h1>Company Profiles</h1>
                     </header>
-                    <main class="flex-row justify-center align-center col-auto p-4 bg-light">
+                    <main class="card group p-4 bg-light">
                     ${appends}
                     </main>
                     <script src="assets/js/script.js"></script>
