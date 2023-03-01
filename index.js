@@ -46,32 +46,10 @@ function createemps() {
         ])
         .then((answers) => {
             const{Mname, MEID, MEmAd, MOfNu, AddEmp} = answers;
-            const manager = new Manager(Mname, MEID, MEmAd, MOfNu, AddEmp);
+            const manager = new Manager(Mname, MEID, MEmAd, MOfNu);
             console.log(manager);
-            var appendmgr = (`          
-            <section class="card card-rounded bg-white">
-            <header class="card-header text-center bg-primary">
-              <h2 class="text-white">
-                Manager
-              </h2>
-            </header>
-            <div class="p-3">
-            <blockquote class="blockquote text-center">
-              <p class="card-body">
-              ${Mname}
-                <br />
-              Employee ID: <br>${MEID}
-              <br />
-              Email: <a href="mailto:${MEmAd}">${MEmAd}</a>
-              <br />
-              Phone: ${MOfNu}
-              </p>
-              </blockquote>
-            </div>
-            <footer class="card-footer text-center">
-            </footer>
-          </section>`);
-          appends += appendmgr ;
+    
+          appends += manager.appendmgr;
           addemps(AddEmp);
         })
         }
@@ -107,32 +85,10 @@ function createemps() {
             ])
             .then((answersint) => {
                 const{Iname, IEID, IEmail, School, AddEmp} = answersint;
-                const intern = new Intern(Iname, IEID, IEmail, School, AddEmp);
+                const intern = new Intern(Iname, IEID, IEmail, School);
                 console.log(intern);
-                var appendint = (`          
-                <section class="card card-rounded bg-white">
-                <header class="card-header text-center bg-primary">
-                  <h2 class="text-white">
-                    Intern
-                  </h2>
-                </header>
-                <div class="p-3">
-                <blockquote class="blockquote text-center">
-                  <p class="card-body">
-                  ${Iname}
-                    <br />
-                  Employee ID: <br>${IEID}
-                  <br />
-                  Email: <a href="mailto:${IEmail}">${IEmail}</a>
-                  <br />
-                  School: ${School}
-                  </p>
-                  </blockquote>
-                </div>
-                <footer class="card-footer text-center">
-                </footer>
-              </section>`);
-              appends += appendint;
+
+              appends += intern.appendint;
               addemps(AddEmp);
             
             })
@@ -171,30 +127,7 @@ function createemps() {
                 const{Ename, EEID, EnEmail, Ghub, AddEmp} = answerseng;
                 const engineer = new Engineer(Ename, EEID, EnEmail, Ghub, AddEmp);
                 console.log(engineer);
-                var appendeng = (`          
-                <section class="card card-rounded bg-white">
-                <header class="card-header text-center bg-primary">
-                  <h2 class="text-white">
-                    Engineer
-                  </h2>
-                </header>
-                <div class="p-3">
-                <blockquote class="blockquote text-center">
-                  <p class="card-body">
-                  ${Ename}
-                    <br />
-                  ${EEID}
-                  <br />
-                 Email: <a href="mailto:${EnEmail}">${EnEmail}</a>
-                  <br />
-                  Github: <a href="https://www.github.com/${Ghub}">https://www.github.com/${Ghub}</a>
-                  </p>
-                  </blockquote>
-                </div>
-                <footer class="card-footer text-center">
-                </footer>
-              </section>`);
-              appends += appendeng;
+              appends += engineer.appendeng;
               addemps(AddEmp);
             })
         }
