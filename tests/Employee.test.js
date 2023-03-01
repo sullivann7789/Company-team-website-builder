@@ -1,4 +1,5 @@
 const Employee = require('../lib/employee.js');
+// import employee file from lib folder
 // This is a test on the parent Employee folder
 // this describe function will effectively test to ensure that user's input for name, id, and email will be transferred to the Employee class which was imported
 describe("Engineer", () => {

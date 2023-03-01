@@ -6,12 +6,15 @@ const Manager = require('./lib/manager.js');
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+// Import all child files from lib folder and inherite their data and functions
+//  Imports Inquirer and fs
 
 
 
-
-
-
+// function createemps() prompts user for Manager and employee information. creates multiple forks in code which allow user to include however many employees they want.
+// takes user input and then appends it to var append string. Each block of code uses it's respective imported file data (Manager, Intern, and Engineer files)
+// Creates a polymorphic file package where index.js is the receiving file and final compiler. 
+// The Index JS file effectively takes all data and functions from other files, and combines them to create the final web project
 function createemps() {
     var appends = ``;
     const newinquiry = new Manager;

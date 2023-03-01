@@ -1,5 +1,5 @@
 const Intern = require('../lib/intern.js');
-
+// import intern file from lib folder
 describe("Intern", () => {
     describe('ExportAssignment', () => {
         it('should properly export Values to new files', () => {
