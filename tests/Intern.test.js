@@ -6,8 +6,8 @@ describe("Intern", () => {
             const name = 'Michelle Wetherford';
             const id = '30205873';
             const email = 'MWetherford@wetherfordengineering.com';
-            const ghub = 'wetherfordsoftwareanddev';
-            const sampetesttextprediction = (`          
+            const school = 'wetherfordsoftwareanddev';
+            const sampletesttextprediction = (`          
     <section class="card card-rounded bg-white">
     <header class="card-header text-center bg-primary">
       <h2 class="text-white">
@@ -30,9 +30,16 @@ describe("Intern", () => {
     <footer class="card-footer text-center">
     </footer>
   </section>`);
-            const intern = new Intern(name, id, email, ghub);
-        
-            expect(intern.appendint).toBe(sampetesttextprediction);
+            const intern = new Intern(name, id, email, school);
+        // if const sampletesttextprediction matches up against the appendint's output, we know the:
+        // name,
+        // id,
+        // email,
+        // and school
+        // values input by the user will successfully be implemented into the HTML file with the supporting HTML script
+        // After performing the `npm test` in the terminal/CLI, jest will perform the test,
+        // if everything is the same in the appendint() function as is the user input in const intern and  const sampletesttextprediction, the test will pass
+            expect(intern.appendint).toBe(sampletesttextprediction);
         });
     });
 });

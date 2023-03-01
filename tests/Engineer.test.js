@@ -32,7 +32,14 @@ describe("Engineer", () => {
     </footer>
   </section>`);
             const engineer = new Engineer(name, id, email, ghub);
-        
+        // if const sampletesttextprediction matches up against the appendeng's output, we know the:
+        // name,
+        // id,
+        // email,
+        // and ghub
+        // values input by the user will successfully be implemented into the HTML file with the supporting HTML script
+        // After performing the `npm test` in the terminal/CLI, jest will perform the test,
+        // if everything is the same in the appendeng() function as is the user input in const engineer and  const sampletesttextprediction, the test will pass
             expect(engineer.appendeng).toBe(sampetesttextprediction);
         });
     });
