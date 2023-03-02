@@ -5,9 +5,7 @@
   "devDependencies": {
     "jest": "^29.4.3"
   },
-    "scripts": {
-      "test": "jest"
-    }
+  "scripts": {
+    "test": "jest"
+  }
 }
-
-
