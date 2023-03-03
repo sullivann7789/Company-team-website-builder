@@ -7,7 +7,7 @@
 3. [Usage](#usage)
 4. [Contributing](#contributors)
 5. [Tests](#tests)
-6.  [Walkthrough Video Tuturial](#walkthrough)
+6.  [Walkthrough Video Tuturial](#walkthroughvideotutorial)
 7. [License](#license)
 8. [Questions](#questions)
 
