@@ -7,8 +7,9 @@
 3. [Usage](#usage)
 4. [Contributing](#contributors)
 5. [Tests](#tests)
-6. [License](#license)
-7. [Questions](#questions)
+6  [Walkthrough Video Tuturial](#walkthroughvideotutorial)
+7. [License](#license)
+8. [Questions](#questions)
 
 ## Description:
 - This node.js package allows users to create a professional website that has all of your team members roles and contact information based off your user input in the Terminal or CLI. 
